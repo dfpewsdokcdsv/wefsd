@@ -8,6 +8,14 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='$', intents=intents)
 
+image_chances = {
+    'kot1.jpeg': 0.4,
+    'kot2.jpeg': 0.7,
+    'kot3.jpeg': 1.0,
+    'mem1.jpeg': 0.6,
+    'mem2.jpeg': 0.9,
+    'mem3.jpeg': 0.1
+}
 
 @bot.event
 async def on_ready():
